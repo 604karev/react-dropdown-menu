@@ -1,0 +1,63 @@
+.select
+  text-align: left
+  position: relative
+  margin-left: 30px
+  &__header
+    display: flex
+    border: 1px solid #cccccc
+    padding: 5px 35px
+    border-radius: 5px
+  &:before
+    content: ''
+    position: absolute
+    top: 15px
+    right: 15px
+    width: 0
+    height: 0
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-top: 6px solid #373737
+  &:first-child
+    margin-left: 15px
+  &.show
+    &:before
+      transform: rotate(180deg)
+
+.options
+  position: absolute
+  top: 0
+  left: 0
+  border: 1px solid #cccccc
+  border-radius: 5px
+  min-width: 150px
+  transform: translate3d(0px, 38px, 0px)
+  padding: 10px 20px
+  background-color: #ffffff
+  &__item
+    list-style-type: none
+    padding: 5px 10px 5px 30px
+    position: relative
+    .avatar
+      top: 7px
+  &__list
+    padding-left: 0
+    margin: 0
+    
+    
+.avatar
+  width: 20px
+  height: 20px
+  position: absolute
+  top: 0
+  left: 0
+  
+    
+.selected
+  position: relative
+  padding-left: 30px
+  
+@media (max-width: 768px)
+  .select
+    &:first-child
+      margin-left: 0
+  

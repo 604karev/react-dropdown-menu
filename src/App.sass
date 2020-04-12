@@ -1,0 +1,41 @@
+body
+  min-width: 320px
+  
+.container
+  max-width: 1190px
+  margin: auto
+  padding: 0 15px
+
+.row
+  display: flex
+  flex-wrap: wrap
+
+
+.dropdown
+  &-menu
+    margin: 20px auto
+    display: flex
+    
+.buttons-wrapper, .dropdown-wrapper
+  display: flex
+  margin: 15px 0
+.inputs-wrapper
+  display: flex
+.button
+  margin-left: 15px
+  padding: 7px 15px
+  display: flex
+  width: 100%
+  
+  
+@media (max-width: 768px)
+  .row
+    flex-direction: column
+  .inputs-wrapper, .dropdown-wrapper, .buttons-wrapper
+    justify-content: center
+  .inputs-wrapper
+    flex-direction: column
+  .button
+    &:first-child
+      margin: 0
+ 
